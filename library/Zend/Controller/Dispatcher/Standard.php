@@ -340,7 +340,6 @@ class Zend_Controller_Dispatcher_Standard extends Zend_Controller_Dispatcher_Abs
      */
     public function loadClass($className)
     {
-		echo $className ."<br />\n";
         $finalClass  = $className;
         if (($this->_defaultModule != $this->_curModule)
             || $this->getParam('prefixDefaultModule'))

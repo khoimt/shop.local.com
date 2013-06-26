@@ -101,9 +101,6 @@ abstract class Zend_Application_Bootstrap_BootstrapAbstract
     {
         $this->setApplication($application);
         $options = $application->getOptions();
-//        print_r($options);
-//        print_r(debug_backtrace());
-//        die;
         $this->setOptions($options);
     }
 
