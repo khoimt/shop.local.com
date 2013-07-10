@@ -1,5 +1,14 @@
 <?php
 
+function print_backtrace () {
+    $arr = debug_backtrace();
+    foreach ($arr as &$v) {
+        unset($v['args']);
+        unset($v['object']);
+    }
+    print_r(array_reverse($arr));
+}
+
 // Define path to application directory
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
