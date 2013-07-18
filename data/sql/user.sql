@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS shop ;
+
+CREATE DATABASE shop ;
+
+USE shop ;
+
+DROP TABLE IF EXISTS shop ;
+
+CREATE TABLE shop (
+  username VARCHAR (255) NOT NULL,
+  pass VARCHAR (255) NOT NULL,
+  email VARCHAR (255) NOT NULL,
+  user_id INT (10) AUTO_INCREMENT,
+  PRIMARY KEY (`user_id`)
+) ENGINE INNODB ;
+
