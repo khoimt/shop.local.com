@@ -1,0 +1,36 @@
+<?php echo $this->doctype() ?>
+<html>
+    <head>
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headLink(); ?>
+    </head>
+    <body>
+        <div id="content" class="content">
+            <div class="title">
+                <h3>Nhân Sự</h3>
+            </div>
+            <div class="line"></div>
+            <div class="clear"></div>
+            <div class="table-content">
+                <input type="button" value="Tạo Mới" />
+                <div class="clear"></div>
+                <table id="user-table" class="user-table" border="1">
+                    <th>ID</th>
+                    <th>Nhân Viên</th>
+                    <th>Email</th>
+                    <th></th>
+                    <th></th>
+                    <tbody>
+                        <?php foreach($this->a_users as $user): ?>
+                            <td><?php echo $user['user_id'] ?></td>
+                            <td><?php echo $user['username'] ?></td>
+                            <td><?php echo $user['email'] ?></td>
+                            <td><a href="#">Sửa</a></td>
+                            <td><a href="#">Xóa</a></td>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </body>
+</html>

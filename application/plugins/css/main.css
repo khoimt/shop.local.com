@@ -1,0 +1,33 @@
+#content {
+    display:block;
+    width:1024px;
+    padding: 30px;
+    border : 1px;
+    margin : auto;
+}
+
+#title {
+    border-bottom: 1px #000000;
+}
+
+#user-table {
+    border-collapse : collapse;
+    width:100%
+}
+
+#user-table td, th {
+    padding : 3px;
+}
+
+#user-table td:first-child {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+    padding: 5px
+}
+
+.line {
+    border : 1px solid #000;
+}
