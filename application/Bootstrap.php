@@ -13,7 +13,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     
     public function _initPlugins()
     {
-        $loader = new Zend_Application_Module_Autoloader(
+        new Zend_Application_Module_Autoloader(
             array (
                 'namespace' => '',
                 'basePath' => APPLICATION_PATH,
@@ -39,6 +39,14 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                 )
         );
         $router->addRoute('product', $route);
+    }
+    
+    public function _initShopView() 
+    {
+        $this->bootstrap('view');
+        $view = $this->getResource('view');
+        $link = $view->headLink();
+        $link->appendStylesheet('/css/main.css');
     }
 }
 
