@@ -13,6 +13,12 @@ function print_backtrace () {
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
 
+defined('DATA_DIR')
+    || define('DATA_DIR', realpath(dir_name(__FILE__) . '/../data'));
+
+defined('CACHE_DIR')
+    || define('CACHE_DIR', realpath(DATA_DIR . '/caches'));
+
 // Define application environment
 defined('APPLICATION_ENV')
     || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));

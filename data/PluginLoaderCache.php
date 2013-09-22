@@ -22,3 +22,6 @@ include_once 'Zend/Form/Decorator/DtDdWrapper.php';
 include_once 'Zend/View/Helper/FormSubmit.php';
 include_once 'Zend/View/Helper/FormReset.php';
 include_once 'Zend/View/Helper/Form.php';
+include_once 'Zend/Controller/Action/Helper/FlashMessenger.php';
+include_once 'Zend/View/Helper/BaseUrl.php';
+include_once 'Zend/Controller/Action/Helper/Redirector.php';
