@@ -9,12 +9,17 @@ function print_backtrace () {
     print_r(array_reverse($arr));
 }
 
+//function sayHello () {
+//    echo "Hello aaa";
+//    return '1';
+//}
+
 // Define path to application directory
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
 
 defined('DATA_DIR')
-    || define('DATA_DIR', realpath(dir_name(__FILE__) . '/../data'));
+    || define('DATA_DIR', realpath(dirname(__FILE__) . '/../data'));
 
 defined('CACHE_DIR')
     || define('CACHE_DIR', realpath(DATA_DIR . '/caches'));

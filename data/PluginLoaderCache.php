@@ -25,3 +25,5 @@ include_once 'Zend/View/Helper/Form.php';
 include_once 'Zend/Controller/Action/Helper/FlashMessenger.php';
 include_once 'Zend/View/Helper/BaseUrl.php';
 include_once 'Zend/Controller/Action/Helper/Redirector.php';
+include_once 'Zend/Application/Resource/Cachemanager.php';
+include_once 'Zend/View/Helper/Placeholder.php';
