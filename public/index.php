@@ -21,6 +21,9 @@ defined('APPLICATION_PATH')
 defined('DATA_DIR')
     || define('DATA_DIR', realpath(dirname(__FILE__) . '/../data'));
 
+defined('DEMO_DIR')
+    || define('DEMO_DIR', realpath(dirname(__FILE__) . '/../demos'));
+
 defined('CACHE_DIR')
     || define('CACHE_DIR', realpath(DATA_DIR . '/caches'));
 
